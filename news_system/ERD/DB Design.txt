@@ -1,0 +1,22 @@
+****users****
+id INT PRIMARY KEY AI NOTNULL
+first_name VARCHAR 100 NOTNULL
+last_name VARCHAR 100 NOTNULL
+username VARCHAR 45 NOTNULL
+password VARCHAR 45 NOTNULL
+created DATETIME NOTNULL
+last_login DATETIME NOTNULL
+***********************
+****user_types****
+id INT AI
+user_type VARCHAR 45
+***********************
+user 1 ประเภทมีสมาชิกได้หลายคน
+****news****
+id PRIMARY KEY AI NOTNULL
+title VARCHAR 255 NOTNULL
+description TEXT NOTNULL
+news_created DATETIME
+hit INT DEFAULT = 0
+*************************
+************

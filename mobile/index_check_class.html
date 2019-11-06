@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<form action="../study_management/class/see.php" method="GET">
+<br>
+<br>
+<h2><b>ตรวจสอบตารางสอน</b></h2>
+<hr>
+<div class="form-group">
+<input type="number" style="width:100%;" class="form-control" name="std_id" value="" placeholder="กรุณากรอกรหัสนิสิต.." autofocus required>
+</div>
+<input type="submit" class="btn btn-primary btn-lg btn-block" value="ตกลง">
+<button onclick="goBack()" class="btn btn-success btn-lg btn-block">ย้อนกลับ</button>
+</form>
+
+</div>
+</body>
+</html>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
